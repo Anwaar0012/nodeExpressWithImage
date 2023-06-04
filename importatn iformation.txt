@@ -1,0 +1,25 @@
+for table top pagination 
+go to datable.net and go to downloads
+check on bootstrap 4
+paste this link to header.js
+<link href="https://cdn.datatables.net/v/bs4/dt-1.13.4/datatables.min.css" rel="stylesheet"/>
+paste this link to footer.js
+<script src="https://cdn.datatables.net/v/bs4/dt-1.13.4/datatables.min.js"></script>
+we will also need jquery to initialize the data table
+go to cdnjs.com https://cdnjs.com/
+copy the script tag
+paste in script tag of footer
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js" integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script>
+    $(document).ready(function () {
+        $("table").DataTable({
+            order: [0,'desc']
+        });        
+    });
+</script>
+pagination and search bar will come
+putting this jquery
+Show 
+10
+ entries
+Search:
